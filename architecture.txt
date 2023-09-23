@@ -1,0 +1,142 @@
+--User
+    -email
+    -password
+    -confirmPassword
+    -?username
+    -?name
+    -?surname
+    -?birthday
+    -?gender
+    -?image
+
+--Wallet
+    -walletNumber
+    -balance
+    -isActive
+    -userId
+
+--Address
+    -region
+    -street
+    -house
+    -apartment
+    -entrance
+    -userId
+
+--Products
+    -name +
+    -brandId +
+    -sellerId +
+    -categoryId +
+    -rating +
+    -sold +
+    -price +
+    -description +
+    -images +
+    -?discount +
+    -isAvailable +
+    -characteristics +
+        -name
+        -value
+
+--Reviews
+    -comment
+    -grade
+    -?image
+    -productId
+    -userId
+
+--Catgories
+    -name
+    -parentCategoryId
+
+--Brands
+    -name
+    -image
+
+--Sellers
+    -name +
+    -image +
+    -description +
+    -pinfl +
+    -?link +
+    -isChecked by admin +
+    -contactNumber +
+    -password +
+    -confirmPassword
+    -email +
+    -addressId +
+
+--Orders
+    -products 
+        -productId
+        -count
+    -deliveryAddress
+    -isPaid
+    -userId
+
+
+
+
+-----APIs
+
+--userAuth
+    -register
+    -verify
+    -login
+    -logout
+
+--user 
+    -getProfile
+    -editProfile
+    -addAddress
+    -getAddress
+    -removeAddress
+
+--company 
+    -register
+    -verify
+    -login
+    -logout
+    -getProfile
+    -editProfile
+
+--admin
+    -getUsers
+    -getUser
+    -getCompanies
+    -getCompany
+    -checkCompany
+    -uncheckCompany
+
+--order 
+    -createOrder
+    -getOrder
+    -buy
+        -changeToPaid
+    -addProduct
+    -removeProduct
+    -increaseProductCount
+    -decreaseProductCount
+
+--review 
+    -addReview
+    -removeReview
+    -getReviews
+
+--wallet 
+    -addMoney
+
+--product 
+    -getAllProducts
+    -getOneProduct
+    -getProductsByName
+    -getProductsByCategory
+    -getProductsByCompany
+    -getProductsByBrand
+    -addProduct
+    -editProduct
+    -inactivateProduct
+    -removeProduct
+
+    
